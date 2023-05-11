@@ -1,0 +1,239 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+<meta name="viewport" content="device" initial-scale=3">    
+<style>    
+* {    
+  box-sizing: content-box;    
+}    
+    
+input[type=text], select, textarea {    
+  width: 90%;    
+  padding: 10px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 90%;    
+  padding: 10px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+
+input[type=Company], select, textarea {    
+  width: 90%;    
+  padding: 10px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical; 
+
+}
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;
+  font-size: 20px;
+  color: #f7f1f1; 
+}    
+
+label[for=text]{
+  width: 90%;
+  height: 80%;
+  font-size: 30px;
+  font-style: oblique;
+}
+label[for=SecuritySoftware]{
+   margin-left: 80px;
+}
+  
+
+input[type=submit] {    
+  background-color: rgb(14, 7, 112);    
+  color: rgb(253, 247, 247);    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;   
+  font-size: 20px; 
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+    
+.container {    
+  border-radius: 3px;    
+  background-color: #f1eeee;    
+  padding: 30px;    
+  background-image: url(https://img.freepik.com/premium-photo/red-wine-pouring-glass-dark-background_488220-25065.jpg);
+ 
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 2px; 
+
+}    
+
+.col-24 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 2px;  
+}
+
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 2px;   
+}    
+
+.col-74 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 2px;
+}
+
+.col-77 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 2px;
+  hie
+
+} 
+    
+/* Clear floats after the columns */    
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}    
+    
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */    
+</style>    
+</head>    
+<body>    
+<h2>POP & POUR </h2>    
+
+<div class="container">    
+  <form>    
+    <div class="row">    
+      <div class="col-24">    
+        <label for="name">Name</label>    
+      </div>    
+      <div class="col-74">    
+        <input type="text" id="name" name="Name" placeholder="Your name..">    
+      </div>     
+    </div>    
+    <div class="row">    
+        <div class="col-24">    
+          <label for="email">Email Address</label>    
+        </div>    
+        <div class="col-74">    
+          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+        </div>   
+     </div>    
+      <div class="row">    
+          <div class="col-24">    
+            <label for="Company">Company</label>  
+          </div>    
+          <div class="col-74">    
+            <input type="Company" id="Company" name="Company" placeholder="Company Name..">      
+          </div>  
+      </div>
+      <div class="row">
+        <div class="col-74">
+            <label for="text">Tell us what IBM Products you want to know more...</label>
+        </div> 
+      </div>    
+    <div class="row">    
+      <div class="col-25">    
+       <label for="securitySoftware">Security Software</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="IBM qradar" name="IBM QRadar">    
+            <option value="none">Security Software</option>    
+          <option value="ibm qradar">IBM QRadar</option>    
+          <option value="ibm guardium">IBM Guardium</option>    
+          <option value="IBM Maas360">IBM Maas360</option>    
+          <option value="IBM CloudPak for Security">IBM CloudPak for Security</option>     
+        </select>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="Sustainability software">Sustainability Software</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="Sustainability software" name="Sustainability software">    
+            <option value="none">Sustainability Software</option>    
+          <option value="envizi">envizi</option>    
+          <option value="Maximo Application Suite">Maximo Application Suite</option>        
+        </select>    
+      </div>  
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+       <label for="dataandAiSoftware">Data and AI Software</label>  
+     </div>    
+      <div class="col-75">    
+        <select id="DataandAI software" name="Data and AI software">    
+            <option value="none">Data and AI Software</option>    
+          <option value="envizi">envizi</option>    
+          <option value="Maximo Application Suite">Maximo Application Suite</option>        
+        </select>      
+    </div>   
+  </div>    
+  <div class="row">    
+    <div class="col-25">    
+     <label for="AutomationSoftware">Automation Software</label>  
+   </div>    
+    <div class="col-75">    
+      <select id="automation software" name="Automation software">    
+          <option value="none">Automation Software</option>    
+        <option value="envizi">envizi</option>    
+        <option value="Maximo Application Suite">Maximo Application Suite</option>        
+      </select>      
+  </div>   
+</div>    
+<div class="row">    
+  <div class="col-25">    
+   <label for="PowerHW">Power - Hardware</label>  
+ </div>    
+  <div class="col-75">    
+    <select id="PowerHW" name="Power - Hardware">    
+        <option value="none">Power - Hardware</option>    
+      <option value="envizi">envizi</option>    
+      <option value="Maximo Application Suite">Maximo Application Suite</option>        
+    </select>      
+</div>   
+</div>    
+<div class="row">    
+  <div class="col-25">    
+   <label for="StorageHW">Storage - Hardware</label>  
+ </div>    
+  <div class="col-75">    
+    <select id="StorageHW" name="Storage - Hardware">    
+        <option value="none">Storage - Hardware</option>    
+      <option value="envizi">envizi</option>    
+      <option value="Maximo Application Suite">Maximo Application Suite</option>        
+    </select>      
+</div>   
+    </div> 
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feed Back</label>    
+      </div>    
+      <div class="col-77">    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>    
+      </div>    
+    </div>    
+      <input type="submit" value="Submit">    
+    </div>    
+  </form>    
+</div>    
+    
+</body>    
+</html>    
